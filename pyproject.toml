@@ -1,0 +1,26 @@
+[project]
+name = "demo-pdm-package"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Tim Hopper", email = "tim@example.com"},
+]
+dependencies = [
+    "cowsay>=6.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.4",
+]
